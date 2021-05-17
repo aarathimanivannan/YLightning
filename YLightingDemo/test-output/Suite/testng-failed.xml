@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Tests.TC004_SelectCeilingLights">
+        <methods>
+          <include name="Login"/>
+          <include name="invokeBrowser"/>
+          <include name="SelectCeilinglights"/>
+          <include name="selectChandeleirs"/>
+        </methods>
+      </class> <!-- Tests.TC004_SelectCeilingLights -->
+      <class name="Tests.TC002_LoginFunction">
+        <methods>
+          <include name="invokeBrowser"/>
+          <include name="Login"/>
+          <include name="LoginSuccess"/>
+        </methods>
+      </class> <!-- Tests.TC002_LoginFunction -->
+      <class name="Tests.TC003_VerifyTtile">
+        <methods>
+          <include name="invokeBrowser"/>
+          <include name="LoginSuccess"/>
+          <include name="Login"/>
+          <include name="VerifyTitle"/>
+        </methods>
+      </class> <!-- Tests.TC003_VerifyTtile -->
+      <class name="Tests.TC006_ProductAddtocart">
+        <methods>
+          <include name="SelectCeilinglights"/>
+          <include name="selectChandeleirs"/>
+          <include name="Login"/>
+          <include name="SelectProduct"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- Tests.TC006_ProductAddtocart -->
+      <class name="Tests.TC005_SelectProductfromChandeliers">
+        <methods>
+          <include name="Login"/>
+          <include name="SelectProduct"/>
+          <include name="SelectCeilinglights"/>
+          <include name="selectChandeleirs"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- Tests.TC005_SelectProductfromChandeliers -->
+      <class name="Tests.TC001_AccountCreation">
+        <methods>
+          <include name="createAccount"/>
+          <include name="accountCreationSuccess"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- Tests.TC001_AccountCreation -->
+      <class name="Tests.TC007_SearchProduct">
+        <methods>
+          <include name="selectChandeleirs"/>
+          <include name="Login"/>
+          <include name="Searchproduct"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- Tests.TC007_SearchProduct -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
